@@ -15,26 +15,20 @@
 
 ---
 
-## ⚙️ How It Works
+## 🚀 Usage & Integration
 
-1. **Lexical Analysis**  
-   The lexer uses the defined regex patterns and DFAs to scan source code and break it down into valid tokens.
+1. **Lexical Analyzer**  
+   - Translate regex and DFA designs into your tool of choice (e.g., Flex/Lex or custom code).
 
-2. **Syntax Analysis**  
-   The parser checks if the sequence of tokens adheres to the CFG, ensuring the code is syntactically valid according to the Tiny Language rules.
+2. **Parser**  
+   - Use CFG with Yacc/Bison or build a recursive‑descent parser.
 
----
-
-## 🚀 Getting Started
-
-This repository focuses on the **design**.  
-You can adapt it to any programming language or compiler toolchain:
-- **Lexer:** Implement using tools like Lex/Flex or custom regex libraries.
-- **Parser:** Implement using Yacc/Bison or recursive descent parsers.
+3. **Combine**  
+   - Feed the token stream from Phase 1 into the Phase 2 parser to validate Tiny Language programs.
 
 ---
 
 ## ✅ Status
 
-- ✔️ **Phase 1**: Lexical Analyzer Design — Completed
-- ✔️ **Phase 2**: Parser CFG Design — Completed
+- **Phase 1**: ✔ Design of Lexical Analyzer (regex + DFA)  
+- **Phase 2**: ✔ Design of Parser (complete CFG)
