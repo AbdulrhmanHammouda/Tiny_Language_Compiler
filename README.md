@@ -18,10 +18,10 @@
 ## 🚀 Usage & Integration
 
 1. **Lexical Analyzer**  
-   - Translate regex and DFA designs into your tool of choice (e.g., Flex/Lex or custom code).
+   - Translate regex and DFA designs into custom code.
 
 2. **Parser**  
-   - Use CFG with Yacc/Bison or build a recursive‑descent parser.
+   - Use CFG with building a recursive‑descent parser.
 
 3. **Combine**  
    - Feed the token stream from Phase 1 into the Phase 2 parser to validate Tiny Language programs.
